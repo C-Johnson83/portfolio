@@ -1,5 +1,6 @@
 * {
   margin: 0 5px 0 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -8,11 +9,13 @@ body {
   line-height: 1.3;
 
 }
-main {
 
+main {
+  background color: (red to blue);
   display: flex;
   flex-wrap: wrap;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -29,12 +32,21 @@ nav ul {
   justify-content: space-around;
   margin: auto;
   padding: 20px;
+  
+}
+nav ul li a:hover {
+  color: cyan;
+}
+nav ul li a:focus {
+  color: cyan;
 }
 
 nav ul li {
   padding: 15px;
 }
-
+.Bio,.c1 {max-width: 400px;
+  
+}
 .hName {
   color: #000000;
   background-color: #C1424F;
@@ -42,39 +54,42 @@ nav ul li {
   border: double;
   border-color: black;
   border-width: 5px;
-  font-family: Arial, Helvetica, sans-serif;
+  
 
 }
 
 .abox {
   display: flex;
   justify-content: flex-end;
+  padding-top: 150px;
   width: auto;
   height: 250px;
   background-image: url("./shapes.jpg");
 }
 
-.bbox {
-  min-width: 600px;
-  min-height: 600px;
-  background-color: #984172;
-
+h2 {
+  background-color: #C1424F;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border: double;
+  border-color: black;
+  border-width: 5px;
 }
 
-.cbox {
+.box{
   min-width: 600px;
   min-height: 600px;
-  background-color: #5f4878;
+  background-image: linear-gradient(#C1424F, #4c5c6c);
+  display: flex;  
 }
 
-.dbox {
-  min-width: 600px;
-  min-height: 600px;
-  background-color: #334562;
+.box section {
+  min-width: 200px;
+  font-size: 300%;
+  margin: 10px;
+  box-shadow: 10px 0 #000000;
 }
-
-.ebox {
-  min-width: 600px;
-  min-height: 600px;
-  background-color: #2b3940;
+.box aside {
+  padding: 15px;
+  font-size: 175%;
 }
