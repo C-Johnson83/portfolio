@@ -79,14 +79,18 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: var(--accent) solid 7px;
 }
 
 .box section {
+  display: flex;
   min-width: 100px;
   margin: 2px;
+  align-items: center;
 }
 
 .box aside {
+  width: 95%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -111,7 +115,6 @@ h2 {
   border-style: solid;
   border-color: var(--color1);
   margin: 10px;
-  /* min-width: 1000px; */
   max-width: 800px;
 }
 
@@ -119,7 +122,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  max-width: 500;
   margin: 10px;
   list-style: none;
 }
@@ -127,7 +129,7 @@ h2 {
 .imgRow img {
   border-style: solid;
   border-color: var(--color1);
-  max-width: 500px;
+  max-width: 600px;
   margin: 10px;
   max-width: 2;
 }
@@ -166,20 +168,31 @@ p {
   z-index: 1;
 }
 
-@media screen and (max-width: 500px) {
-
-  header,
-  main {
+@media screen and (max-width: 1000px) {
+  /* Adjust header and main for smaller screens */
+  header {
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
   }
 
-  section {
-    padding-right: 0;
+  main {
+    padding: 0; /* Remove padding for main content */
   }
 
-  aside {
-    width: auto;
-    text-align: center;
+  /* Stack elements vertically in the "box" section */
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Adjust image styles for smaller screens */
+  .imgBig img,
+  .imgRow img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+  }
+
+  /* Adjust "p" element padding */
+  p {
+    padding: 20px; /* Reduce padding for paragraphs */
   }
 }
