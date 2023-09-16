@@ -44,6 +44,7 @@ header {
   color: #000000;
   background-color: var(--accent);
   margin: 2px;
+  padding: 5px;
   border: double;
   border-color: black;
   border-width: 5px;
@@ -89,6 +90,7 @@ main {
 .caption {
   background-color: var(--accent);
   margin: 2px;
+  padding: 5px;
   border: double;
   border-color: black;
   border-width: 5px;
