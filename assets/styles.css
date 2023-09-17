@@ -84,7 +84,7 @@ main {
 .picture {
   display: flex;
   justify-content: space-between;
-  background-image: url("./shapes2.jpg");
+  background-image: url("./images/shapes.jpg");
 }
 
 /* Styles for the 'captionBox' element */
@@ -150,6 +150,11 @@ main {
   border-width: 5px;
   margin: 10px;
   max-width: 90%;
+}
+/* Styles for links within 'imgBig' */
+.imgBig a {
+  font-size: small;
+  color: #fff;
 }
 
 /* Styles for the 'imgRow' element */
