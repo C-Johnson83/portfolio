@@ -19,7 +19,7 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 
 
 # Screenshot of Deployed Application
-![Portfolio](assets/screenshot.PNG)
+![Portfolio](assets/images/screenshot.PNG)
 
 # Link to Deployed Application
 https://c-johnson83.github.io/portfolio/
