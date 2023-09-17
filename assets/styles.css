@@ -1,15 +1,20 @@
+/* Define custom CSS variables */
 :root {
   --color1: #4d4c4c;
+  /* Background color 1 */
   --color2: #000000;
+  /* Background color 2 */
   --accent: #277287;
+  /* Accent color */
 }
 
+/* Apply common styles to all of the elements */
 * {
   font-family: Arial, Helvetica, sans-serif;
   list-style: none;
-
 }
 
+/* Styles for the unordered lists */
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -18,16 +23,19 @@ ul {
   padding: 20px;
 }
 
+/* Styles for the links within the list items */
 ul li a {
   margin: 20px;
   color: var(--accent);
   font-weight: bold;
 }
 
+/* Hover styles for the links */
 ul li a:hover {
   color: var(--accent);
 }
 
+/* Styles for the header section */
 header {
   display: flex;
   justify-content: space-between;
@@ -38,6 +46,7 @@ header {
   max-height: 75px;
 }
 
+/* Styles for the name box in the header */
 .hName {
   display: flex;
   align-items: center;
@@ -50,6 +59,7 @@ header {
   border-width: 5px;
 }
 
+/* Styles for the 'me' element */
 .me {
   border-radius: 40%;
   max-height: 300px;
@@ -58,35 +68,35 @@ header {
   border-color: var(--color2);
 }
 
-
+/* Styles for the body section */
 body {
   display: flex;
   flex-direction: column;
   line-height: 1.3;
 }
 
+/* Styles for the main content area */
 main {
-  background-image: linear-gradient(to bottom, var(--color1), var(--color2))
+  background-image: linear-gradient(to bottom, var(--color1), var(--color2));
 }
 
+/* Styles for the 'picture' element */
 .picture {
   display: flex;
   justify-content: space-between;
   background-image: url("./shapes2.jpg");
 }
 
+/* Styles for the 'captionBox' element */
 .captionBox {
   display: flex;
   justify-content: flex-end;
   padding-top: 150px;
   width: auto;
   height: 250px;
-
-
-
-
 }
 
+/* Styles for the 'caption' element */
 .caption {
   background-color: var(--accent);
   margin: 2px;
@@ -96,20 +106,21 @@ main {
   border-width: 5px;
 }
 
+/* Styles for the 'box' section */
 .box {
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   border-bottom: var(--accent) solid 7px;
 }
 
+/* Styles for the 'section' element within 'box' */
 .box section {
   display: flex;
   max-width: 10%;
   margin: 2px;
-
 }
 
+/* Styles for the 'aside' element within 'box' */
 .box aside {
   width: 90%;
   display: flex;
@@ -120,27 +131,28 @@ main {
   border-left: var(--accent) solid 7px;
 }
 
+/* Styles for the 'figure' element */
 .box figure {
-  /* min-height: 600px; */
   font-size: 200%;
   margin: 2px;
-  /* padding: 20px; */
 }
 
+/* Styles for the 'imgBig' element */
 .imgBig {
   display: flex;
   align-content: center;
 }
 
+/* Styles for images within 'imgBig' */
 .imgBig img {
   border-style: solid;
   border-color: var(--color1);
   border-width: 5px;
   margin: 10px;
   max-width: 90%;
-
 }
 
+/* Styles for the 'imgRow' element */
 .imgRow {
   display: flex;
   flex-wrap: wrap;
@@ -148,6 +160,7 @@ main {
   margin: 10px;
 }
 
+/* Styles for images within 'imgRow' */
 .imgRow img {
   border-style: solid;
   border-color: var(--color1);
@@ -156,14 +169,15 @@ main {
   max-width: 2;
 }
 
+/* Styles for links within 'imgRow' */
 .imgRow a {
   max-width: 50%;
   text-decoration: none;
   font-size: small;
   color: #fff;
-
 }
 
+/* Styles for paragraphs */
 p {
   display: flex;
   align-items: center;
@@ -172,33 +186,12 @@ p {
   font-weight: bold;
 }
 
+/* Styles for specific elements that have IDs */
 #contactMe h3,
 #contactMe h4,
-#contactMe p,
-#css-span {
+#contactMe p {
   color: #fff;
 }
-
-#css-span {
-  position: relative;
-  text-decoration: underline;
-  cursor: grab;
-}
-
-#css-span:hover::after {
-  content: "Me, it is me you're looking for";
-  position: absolute;
-  left: 0px;
-  bottom: 24px;
-  min-width: 200px;
-  border: 1px #aaaaaa solid;
-  background-color: var(--color1);
-  padding: 12px;
-  color: #fff;
-  font-size: 80%;
-  z-index: 1;
-}
-
 
 @media screen and (max-width: 1000px) {
 
@@ -215,14 +208,12 @@ p {
 
   .box aside {
     border: none;
-
   }
 
   /* Adjust image styles for smaller screens and ensure images don't exceed their container */
-  */ .imgBig,
+  .imgBig,
   .imgRow {
     max-width: 100%;
-
   }
 
   .imgRow {
@@ -233,7 +224,6 @@ p {
 
   .imgRow a {
     max-width: 100%;
-
   }
 
   /* Adjust "p" element padding */
@@ -285,7 +275,6 @@ p {
   }
 
   /* Adjust image styles for smaller screens and ensure images don't exceed their container */
-
   .imgRow {
     display: flex;
     max-width: 100%;
@@ -295,7 +284,6 @@ p {
 
   .imgRow a {
     max-width: 80%;
-
   }
 
   /* Adjust "p" element padding */
