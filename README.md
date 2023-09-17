@@ -1,4 +1,4 @@
-Repository for module 2 challenge assignment
+Repository for Module 2 Challenge Assignment
 
 # Advanced CSS Challenge: Professional Portfolio
 
