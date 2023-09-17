@@ -262,7 +262,7 @@ p {
   main {
     padding: 0;
   }
-
+/*Adjust the max-height of the me element
   .me {
 
     max-height: 200px;
@@ -294,13 +294,13 @@ p {
 
 @media screen and (max-width: 450px) {
 
-  /*  adjust the contact links for smaller screens */
+  /* Adjust the contact links for smaller screens */
   .contactLinks {
     margin: 5px;
     padding: 5px;
     font-size: 80%;
   }
-
+/* Adjust the font size for smaller screen */
   header,
   .captionBox {
     font-size: 75%;
